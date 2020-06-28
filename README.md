@@ -1,16 +1,10 @@
-# irsum
+Inicialmente queria rehacer la app con dart y flutter. las ventajas de esto era un desarrollo mas rapido y compatibilidad android y iOS. sin embargo la deteccion automatica de servidor no funciono ni con las las librerias de udp dart ni con las de multicast-dns. aunque flutter tiene caracteristicas que me gustaron, el soporte, libreiras e informacion disponible simplemente no es suficiente, todos las librerias se usaban tal cual como en los ejemplos de la documentacion y siempre habia un error en ejecucion.
 
-A new Flutter application.
+por este motivo decidi regresar a android nativo con java, que tiene una gran madurez y no es que vaya a quedar obsoleto tampoco. flutter es una buena opcion si es necesario que funcione en ambos sistemas operativos, pero si el desarrollo es solo android es mejor usar nativo.
 
-## Getting Started
+ademas una app de flutter pesa mucho mas que una nativa, mientras que un simple ejemplo puede pesar 60Mb en android nativo lo mismo puede psar 4Mb.
 
-This project is a starting point for a Flutter application.
+La deteccion automatica de servidor usando udp broadcast funciono en un solo dia con android nativo.
+este proyecto lo guardo a manera de ejemplo para un futuro en el que sea necesario retomar el desarrollo en flutter.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+cuando se va a instalar una libreria el equivalente de npm es pub y se instala agregando al archivo pub spec y luego usando el comando get.
